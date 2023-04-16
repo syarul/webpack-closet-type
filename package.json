@@ -1,12 +1,12 @@
 {
   "name": "@syarul/webpack-closet-type",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Webpack plugin for closet-type",
   "main": "index.js",
   "scripts": {
     "lint": "standard **/*.js --fix",
     "pretest": "npm run lint",
-    "test": "webpack --config webpack.test.js"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -27,17 +27,32 @@
   "homepage": "https://github.com/syarul/webpack-closet-type#readme",
   "devDependencies": {
     "commander": "^10.0.1",
+    "coveralls": "^3.1.1",
+    "jest": "^29.5.0",
     "standard": "^17.0.0",
-    "webpack": "^5.79.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-sources": "^3.2.3"
+    "webpack": "^5.79.0"
   },
   "dependencies": {
-    "closet-type": "^0.0.4"
+    "closet-type": "^0.0.6"
   },
   "standard": {
     "ignore": [
       "output"
+    ],
+    "globals": [
+      "test",
+      "expect"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/output/",
+      "webpack.test.js"
     ]
   }
 }

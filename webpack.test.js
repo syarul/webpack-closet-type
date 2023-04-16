@@ -24,5 +24,6 @@ module.exports = {
       buffer: false
     }
   },
-  target: 'web'
+  target: 'web',
+  devtool: 'source-map'
 }
