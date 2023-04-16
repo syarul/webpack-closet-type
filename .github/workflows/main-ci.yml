@@ -21,6 +21,9 @@ jobs:
 
       - name: Test
         run: npm test
+        
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
 
   publish-gpr:
     needs: build
