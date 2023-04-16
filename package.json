@@ -1,6 +1,6 @@
 {
   "name": "@syarul/webpack-closet-type",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webpack plugin for closet-type",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/syarul/webpack-closet-type#readme",
   "devDependencies": {
+    "commander": "^10.0.1",
     "standard": "^17.0.0",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
