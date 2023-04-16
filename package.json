@@ -1,0 +1,42 @@
+{
+  "name": "@syarul/webpack-closet-type",
+  "version": "0.0.1",
+  "description": "Webpack plugin for closet-type",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard **/*.js --fix",
+    "pretest": "npm run lint",
+    "test": "webpack --config webpack.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syarul/webpack-closet-type.git"
+  },
+  "keywords": [
+    "types",
+    "check",
+    "javascript",
+    "validation",
+    "webpack"
+  ],
+  "author": "Shahrul Nizam Selamat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syarul/webpack-closet-type/issues"
+  },
+  "homepage": "https://github.com/syarul/webpack-closet-type#readme",
+  "devDependencies": {
+    "standard": "^17.0.0",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-sources": "^3.2.3"
+  },
+  "dependencies": {
+    "closet-type": "^0.0.4"
+  },
+  "standard": {
+    "ignore": [
+      "output"
+    ]
+  }
+}
